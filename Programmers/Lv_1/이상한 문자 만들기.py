@@ -1,5 +1,6 @@
 def solution(s):
     answer = ''
+
     list = s.split(" ")
 
     for i in list:
