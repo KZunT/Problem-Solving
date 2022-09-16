@@ -18,3 +18,4 @@ def solution(n, arr1, arr2):
 
     return answer
 
+# 다시 풀어보는게 좋을것 같다.
