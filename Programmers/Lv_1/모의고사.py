@@ -22,3 +22,5 @@ def solution(answers):
             answer.append(i + 1)
 
     return answer
+
+# 간결화 가능
