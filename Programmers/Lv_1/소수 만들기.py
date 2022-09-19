@@ -10,7 +10,7 @@ def is_prime(num):
 
 
 def solution(nums):
-    answer = -1
+
     result = []
     comb = list(map(sum, itertools.combinations(nums, 3)))
 
