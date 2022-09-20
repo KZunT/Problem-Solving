@@ -7,9 +7,6 @@ def solution(dartResult):
     bonus_list = ["S", "D", "T"]
     option_list = ["*", "#"]
 
-    result = 0
-    num = 0
-
     for idx in range(len(dartResult)):
         if dartResult[idx] in num_list:
 
