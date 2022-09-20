@@ -1,5 +1,5 @@
 def solution(N, stages):
-    answer = []
+
     fail = {}
     for num in range(1, N + 1):
         non_clear = 0
