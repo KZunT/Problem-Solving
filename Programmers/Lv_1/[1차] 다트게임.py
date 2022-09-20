@@ -56,4 +56,5 @@ def solution(dartResult):
         dart[i] = int(dart[i][0]) ** bonus[dart[i][1]] * option[dart[i][2]]
 
     answer = sum(dart)
+    
     return answer
