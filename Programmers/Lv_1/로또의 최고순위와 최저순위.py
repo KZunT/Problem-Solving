@@ -1,6 +1,5 @@
 def solution(lottos, win_nums):
     cnt = 0
-    zero = 0
 
     for num in lottos:
         if num in win_nums:
