@@ -1,6 +1,4 @@
 def solution(n, lost, reserve):
-    
-    s_list = list(range(1, n + 1))
 
     dup = set(reserve) & set(lost)
     reserve = list(set(reserve) - set(dup))
