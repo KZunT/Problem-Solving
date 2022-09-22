@@ -1,5 +1,5 @@
 def solution(n, lost, reserve):
-    answer = 0
+    
     s_list = list(range(1, n + 1))
 
     dup = set(reserve) & set(lost)
