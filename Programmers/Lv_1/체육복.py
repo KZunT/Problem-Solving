@@ -14,3 +14,5 @@ def solution(n, lost, reserve):
     answer = n - len(lost)
 
     return answer
+
+# 주석처리 코드설명이 필요할듯
