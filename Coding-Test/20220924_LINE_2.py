@@ -1,6 +1,7 @@
 from typing import List
 import re
 
+# 정규표현식 사용 , 아마 시간복잡도 문제가 있음
 
 def solution(k: int, dic: List[str], chat: str) -> str:
 
