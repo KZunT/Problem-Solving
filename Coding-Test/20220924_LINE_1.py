@@ -8,7 +8,6 @@ def solution(queries: List[List[int]]) -> int:
 
     for query in queries:
         arr_num = query[0]
-        add_ele = query[1]
         arr_dict[arr_num] = 0
         len_dict[arr_num] = 0
 
