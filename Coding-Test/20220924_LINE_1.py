@@ -23,7 +23,7 @@ def solution(queries: List[List[int]]) -> int:
             answer = answer + arr_dict[arr_num]
             # print(arr_num,"복사",arr_dict[arr_num])
 
-            i = 0
+            i = 0 # 체계적으로 찾는 방법이 필요할듯
             while (True):
                 if 2 ** i >= arr_dict[arr_num] + add_ele:
                     len_dict[arr_num] = 2 ** i
