@@ -3,7 +3,6 @@ import re
 
 
 def solution(k: int, dic: List[str], chat: str) -> str:
-    answer = ''
 
     chat_list = chat.split(" ")
     word_list = chat.split(" ")
