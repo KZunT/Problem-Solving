@@ -18,7 +18,7 @@ def solution(today, terms, privacies):
     for i,privacy in enumerate(privacies):
         privacy_list = privacy.split(' ')
         privacy_date_list = list(map(int,privacy_list[0].split('.')))
-        privacy_date = datetime.date(privacy_date_list[0], privacy_date_list[1], privacy_date_list[2])
+        #privacy_date = datetime.date(privacy_date_list[0], privacy_date_list[1], privacy_date_list[2])
 
         #print(privacy_date)
 
