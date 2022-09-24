@@ -1,5 +1,7 @@
 import datetime
 
+# 테스트 케이스 제외하고 런타임 에러 발생..
+
 def solution(today, terms, privacies):
 
     answer = []
