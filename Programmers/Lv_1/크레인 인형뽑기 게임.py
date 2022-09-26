@@ -7,6 +7,7 @@ def solution(board, moves):
         for row in board:
 
             if row[move - 1] != 0:
+
                 pick_list.append(row[move - 1])
                 row[move - 1] = 0
 
