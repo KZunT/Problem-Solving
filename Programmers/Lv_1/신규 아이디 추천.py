@@ -33,7 +33,7 @@ def solution(new_id):
     return answer
 
 
-# 정규 표현식 사용한 코드
+# 정규 표현식 사용한 코드 (사용하는것이 매우 유용하다.)
 
 # import re
 #
