@@ -4,6 +4,7 @@ def solution(survey, choices):
     cha_dict = {'R': 0, 'T': 0, 'C': 0, 'F': 0, 'J': 0, 'M': 0, 'A': 0, 'N': 0}
 
     for sur, choice in zip(survey, choices):
+        
         if choice < 4:
             cha_dict[sur[0]] += score[choice - 1]
         if choice > 4:
@@ -38,7 +39,9 @@ def solution(survey, choices):
 # def solution(survey, choices):
 #
 #     my_dict = {"RT":0,"CF":0,"JM":0,"AN":0}
+
 #     for A,B in zip(survey,choices):
+
 #         if A not in my_dict.keys():
 #             A = A[::-1]
 #             my_dict[A] -= B-4
@@ -46,7 +49,9 @@ def solution(survey, choices):
 #             my_dict[A] += B-4
 #
 #     result = ""
+
 #     for name in my_dict.keys():
+
 #         if my_dict[name] > 0:
 #             result += name[1]
 #         elif my_dict[name] < 0:
