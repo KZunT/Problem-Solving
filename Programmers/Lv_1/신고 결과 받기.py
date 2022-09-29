@@ -5,8 +5,6 @@ def solution(id_list, report, k):
 
     report = list(set(report))
 
-    report_cnt = []
-
     for rep in report:
         report_dict[rep.split(' ')[1]].append(rep.split(' ')[0])
 
