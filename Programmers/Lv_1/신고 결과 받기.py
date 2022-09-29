@@ -22,6 +22,8 @@ def solution(id_list, report, k):
 #     answer = [0] * len(id_list)
 #     reports = {x : 0 for x in id_list}
 # 
+# set 을 사용하여 중복 제거
+#
 #     for r in set(report):
 #         reports[r.split()[1]] += 1
 #
