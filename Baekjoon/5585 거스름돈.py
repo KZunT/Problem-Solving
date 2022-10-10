@@ -17,6 +17,6 @@ coin_cnt = 0
 
 for coin in coin_list:
     coin_cnt += pay // coin
-    pay = pay % coin
+    pay %= coin
 
 print(coin_cnt)
