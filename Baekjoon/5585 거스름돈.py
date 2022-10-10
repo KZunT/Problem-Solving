@@ -13,6 +13,8 @@ coin_cnt = 0
 #     if pay == 0:
 #         break
 
+#  효율적인 코드 추가
+
 for coin in coin_list:
     coin_cnt += pay // coin
     pay = pay % coin
