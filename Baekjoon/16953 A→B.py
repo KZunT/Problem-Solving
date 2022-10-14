@@ -27,3 +27,26 @@ if A == B: # 조건이 완성될 시
     print(cnt)
 else:
     print(-1)
+
+
+# 좀 더 깔끔한 코드 추가
+
+# A,B = map(int, input().split())
+#
+# count = 1
+#
+# while True:
+#   if A == B: # 조건 만족
+#     break
+#   elif (B % 2 != 0 and B % 10 != 1) or (A > B): # 예외 상황처리
+#     count = -1
+#     break
+#   else:
+#     if B % 10 == 1:
+#       B //= 10
+#       count += 1
+#     else:
+#       B //= 2
+#       count += 1
+#
+# print(count)
