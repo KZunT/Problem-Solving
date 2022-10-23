@@ -22,7 +22,7 @@ for i in range(len(n)):
         a['6'] += 1
     else:
         a[n[i]] += 1
-        
+
 if a['6'] % 2 == 0:
     a['6'] = a['6'] // 2
 else:
