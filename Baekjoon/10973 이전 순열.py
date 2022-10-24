@@ -15,6 +15,9 @@
 # else:
 #     print(*perm_list[p_idx-1])
 
+#
+# 순열을 생성하면서 찾는 코드 10972 다음 순열 문제의 반대
+
 N = int(input())
 seek_perm = list(map(int, input().split()))
 
