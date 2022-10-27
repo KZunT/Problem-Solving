@@ -1,4 +1,5 @@
 # 파이참 환경에서 오류??
+# 백준에서는 정답처리 됨
 
 import sys
 
@@ -39,9 +40,11 @@ def empty():
     S = set()
 
 
+# 시간초과에 유의하여야함
 for i in range(N):
 
     order = sys.stdin.readline().split()
+
     if order[0] == 'add':
         add(int(order[1]))
     if order[0] == 'remove':
