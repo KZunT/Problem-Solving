@@ -20,7 +20,7 @@ queue.append(v)  # 방문한 노드 큐에 삽입
 
 while queue:  # 큐가 빌 때 까지 반복
 
-    v = queue.popleft()  # 큐에서 꺼내기
+    v = queue.popleft()  # 큐에서 꺼내기, 현재 노드의 갱신
 
     for n in range(1, N + 1):  # 모든 컴퓨터에 대해 반복
         if graph[v][n] == 1 and (n not in visited):  # 노드가 연결되어 있고 방문하지 않았다면
