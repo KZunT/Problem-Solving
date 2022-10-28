@@ -1,6 +1,6 @@
 from collections import deque
 
-N, M, V = map(int, input().split(' '))  # N+1 = M
+N, M, V = map(int, input().split(' '))
 
 
 # 방문 리스트의 경우 함수의 외부에 선언도 가능하다.
@@ -33,7 +33,7 @@ def BFS(v):
 graph = [[0] * (N + 1) for _ in range(N + 1)]
 # 인접행렬의 생성(2차원 배열), 0인경우 노드간 연결 안되어있음 1인경우 연결 되어있음
 
-for _ in range(M):
+for _ in range(N+1):
     v1, v2 = map(int, input().split(' '))  # 노드간 연결 입력
     graph[v1][v2] = graph[v2][v1] = 1  # 연결 정보 그래프에 삽입 (한 값을 여러곳에 넣기.. ㄷㄷ)
 
