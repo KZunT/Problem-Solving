@@ -6,7 +6,7 @@ deck = deque()
 N = int(input())
 
 for _ in range(N):
-    command = sys.stdin.readline().split() # input() 으로하면 시간초과..
+    command = sys.stdin.readline().split()  # input() 으로하면 시간초과..
     order = command[0]
 
     if order == 'push_front':
