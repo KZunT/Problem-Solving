@@ -1,14 +1,18 @@
 T = int(input())
 
-for _ in range(T):
-    n = int(input()) # 2 x n 스티커
+for i in range(T):
+    dp = []
 
-    dp = [list(map(int, input().split())) for _ in range(2)]
-    dp[0][1] += dp[1][0]
-    dp[1][1] += dp[0][0]
+    n = int(input())
 
-    for i in range(2, n):
-        dp[0][i] += max(dp[1][i - 1], dp[1][i - 2])
-        dp[1][i] += max(dp[0][i - 1], dp[0][i - 2])
+    for k in range(2):
+        dp.append(list(map(int, input().split())))
 
-print(max(dp[0][n - 1], dp[1][n - 1]))
+    for j in range(1, n):
+        if j == 1:
+            dp[0][j] += dp[1][j - 1]
+            dp[1][j] += dp[0][j - 1]
+        else:
+            dp[0][j] += max(dp[1][j - 1], dp[1][j - 2])
+            dp[1][j] += max(dp[0][j - 1], dp[0][j - 2])
+    print(max(dp[0][n - 1], dp[1][n - 1]))
