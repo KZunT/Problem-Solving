@@ -4,11 +4,11 @@ N, M = map(int, input().split())
 
 queue = deque([i for i in range(1, N + 1)])
 
-index = list(map(int, input().split()))
+numbers = list(map(int, input().split()))
 
 cnt = 0
 
-for num in index:
+for num in numbers:
     while True:
         if queue[0] == num:
             queue.popleft()
@@ -20,5 +20,4 @@ for num in index:
             else:
                 queue.rotate(1)
                 cnt += 1
-
 print(cnt)
