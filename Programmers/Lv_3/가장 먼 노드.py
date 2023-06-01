@@ -23,4 +23,4 @@ def solution(n, edge):
 
     print(visited)
 
-    return visited.count(max(visited))
+    return visited.cnt(max(visited))
