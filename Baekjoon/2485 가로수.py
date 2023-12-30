@@ -1,5 +1,6 @@
+import sys
 from math import gcd
-
+input = sys.stdin.readline
 N = int(input())
 
 pre_tree = int(input())
@@ -22,4 +23,3 @@ for tree in tree_list:  # 얼마나 나무를 심어야하는지 세기
     cnt += tree // distance - 1
 
 print(cnt)
-
